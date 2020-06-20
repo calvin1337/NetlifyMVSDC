@@ -1,0 +1,272 @@
+.overlayBox{
+position: fixed;    
+z-index:100;
+text-align: center;
+left: 1%;
+right: 1%;
+width:20%;
+top:8%;
+height:92%;
+margin:auto;        
+}
+
+.fighterName{
+    margin-top:10px;
+    text-transform: capitalize;
+  }
+  
+  .fighterName h1{
+    text-align:center;
+    font-size:40px;
+    color:white;
+  }
+
+  .fighterNameMobile{
+    display:none;
+  }
+
+  .leftGridContainer {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Picture CardInfo";
+    margin:10px;
+    height:500px;
+  }
+
+  .rightGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "CardInfo Picture";
+    margin:10px;
+    justify-items:right;
+
+  }
+  
+  .pictureContainer { 
+    grid-area: Picture;
+    height:430px;
+    width:100%;
+    border:5px solid #222;
+    background:white;
+  }
+  
+  .infoContainer{ 
+    grid-area: CardInfo; 
+    width:70%;
+    height:500px;
+  }
+
+  .winnerBtn{
+    height:80px;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+       justify-content: center
+    
+    }
+
+    button:disabled,
+    button[disabled],
+    button[disabled]:hover{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+    .tieButton{
+      height:92px;
+      margin-top:10px;
+     display: flex;
+      flex-direction: column;
+      align-items: center;
+       justify-content: center
+    }
+
+    .Test{
+      height:100px;
+      text-align:right;
+      padding-right:100px;
+      }
+
+      .TestDc{
+        height:100px;
+       
+        text-align:left;
+        padding-left:100px;
+      }
+
+      .backgroundLogo{
+        background: #ffffff;
+      }
+
+      .bottomVs{
+        color:white;
+        margin-top:30px;
+      }
+
+      .bottomVs h1{
+        font-size: 50px;
+      }
+
+      .recordStyle{
+        font-size:20px;
+        float:left;
+        color:black;
+        margin-top:10px;
+        padding-left:60px;
+      }
+      
+      .recordStyleDc{
+        font-size:20px;
+        float: right;
+        color:black;
+        margin-top:10px;
+        padding-right:60px;
+      }
+
+      .mobileOverlay{
+        display: none;
+      }
+      .recordMobile{
+        display:none;
+      }
+
+      
+
+      @media only screen and (max-width: 767px) {
+        .fighterName h1{
+          font-size:16px;
+          text-align: center;
+        }
+        .fighterName {
+          height:30px;
+          margin:0;
+        }
+        .recordMobile{
+          display:block;
+        }
+
+        .recordStyle{
+          padding:none;
+        }
+        .leftGridContainer{
+          max-width: 50vw;
+          width:50vw;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          grid-template-areas: "Picture" "CardInfo";
+          margin:0;
+        }
+
+        
+
+        .overlayBox{
+          display:none;
+        }
+
+
+        .rightGridContainer{
+          width:50vw;
+          grid-template-columns: 1fr ;
+          grid-template-rows: 1fr ;
+          grid-template-areas: "Picture" "CardInfo";
+          
+          margin:0;
+        }
+        
+        .pictureContainer{
+          height:50vh;
+          padding:10px;
+        }
+
+        .pictureContainer img{
+          height: 50vh;
+          padding:10px;
+        }
+
+        .backgroundLogo{
+          display:none;
+        }
+
+        .infoContainer{
+          width:50vw;
+          height:50%;
+        }
+
+        .recordStyle{
+          display: none;
+
+      }
+
+      .recordStyleDc{
+        display: none;
+      }
+
+      .mobileOverlay{
+        position: fixed;    
+        z-index:100;
+        text-align: center;
+        left: 1%;
+        right: 1%;
+        width:20%;
+        top:8%;
+        height:92%;
+        margin:auto;  
+        display:none;
+      }
+      
+      .vsMobile{
+        top:25vh;
+        position: relative;
+        color:white;
+        background: #222222;
+        border-radius: 50%;
+      }
+      .pictureContainer{
+        border:3px solid #222;
+      }
+
+      .tieBtnMobile{
+        top:79vh;
+        position: relative;
+      }
+
+      .recordMobile{
+        font-size: 10px;
+        margin:0;
+        height:10px;
+        text-align: center;
+      }
+
+      .fighterName {
+        margin:0;
+        font-size: 10px;
+        border:none;
+      }
+
+      .fighterName h1{
+        border:none;
+      }
+
+      .container{
+        height:100%;
+      }
+
+      .Test{
+        display:none;
+      }
+    
+      .TestDc{
+        display:none;
+      }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+
+    }
+
+
+    @media only screen and (min-width: 992px) and (max-width:1199px) {
+
+    }
