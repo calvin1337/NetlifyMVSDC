@@ -12,7 +12,7 @@ export class App extends Component {
 
     return (
       <div className="app">
-        <Router basename={process.env.PUBLIC_URL} >
+        <Router >
         <NavBar />
 
         <Route path="/" exact render={props => (
